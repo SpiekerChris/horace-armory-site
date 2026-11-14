@@ -5,18 +5,18 @@
 */
 
 :root {
-  --ink: #241c16;
-  --cream: #f4efe6;
-  --paper: #f7f3ec;
-  --paper-deep: #f3ebdd;
-  --card: #fffdf9;
-  --espresso: #1c1410;
-  --walnut: #3a2418;
-  --footer: #140e0b;
-  --brass: #e7d3a1;
-  --brass-deep: #6a3f22;
-  --steel: #4c453e;
-  --line: rgba(36, 28, 22, 0.12);
+  --ink: #1a2128;
+  --mist: #f2f5f7;
+  --paper: #e9edf1;
+  --paper-deep: #dfe4e9;
+  --card: #f6f8fa;
+  --gunmetal: #262c33;
+  --plate: #3a4450;
+  --footer: #161b20;
+  --silver: #d7e2ec;
+  --steel-ink: #24384a;
+  --muted: #4b5560;
+  --line: rgba(26, 33, 40, 0.12);
   --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
   --wrap: 1120px;
@@ -41,7 +41,7 @@ body {
   line-height: 1.65;
   color: var(--ink);
   background:
-    radial-gradient(1000px 420px at 0% -10%, rgba(196, 162, 101, 0.09), transparent 55%),
+    radial-gradient(1000px 420px at 0% -10%, rgba(158, 176, 194, 0.16), transparent 55%),
     var(--paper);
 }
 
@@ -70,15 +70,15 @@ blockquote {
 }
 
 a {
-  color: var(--brass-deep);
+  color: var(--steel-ink);
 }
 
 a:hover {
-  color: #4e2e18;
+  color: #152838;
 }
 
 :focus-visible {
-  outline: 3px solid var(--brass-deep);
+  outline: 3px solid var(--steel-ink);
   outline-offset: 3px;
 }
 
@@ -88,7 +88,7 @@ a:hover {
 .band-walnut :focus-visible,
 .panel-dark :focus-visible,
 .site-footer :focus-visible {
-  outline-color: var(--brass);
+  outline-color: var(--silver);
 }
 
 .skip-link {
@@ -97,8 +97,8 @@ a:hover {
   top: 0.75rem;
   z-index: 50;
   transform: translateY(-160%);
-  background: var(--cream);
-  color: var(--espresso);
+  background: var(--mist);
+  color: var(--gunmetal);
   text-decoration: none;
   font-weight: 600;
   padding: 0.6rem 0.9rem;
@@ -140,9 +140,10 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: var(--espresso);
-  color: var(--cream);
-  border-bottom: 1px solid rgba(231, 211, 161, 0.18);
+  background: var(--gunmetal);
+  color: var(--mist);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.07), transparent 46%);
+  border-bottom: 1px solid rgba(215, 226, 236, 0.22);
 }
 
 .header-bar {
@@ -167,7 +168,7 @@ a:hover {
 }
 
 .brand:hover .brand-name {
-  color: var(--brass);
+  color: var(--silver);
 }
 
 .brand-mark {
@@ -195,7 +196,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--brass);
+  color: var(--silver);
 }
 
 .nav-button {
@@ -204,10 +205,10 @@ a:hover {
   width: 44px;
   height: 44px;
   padding: 0;
-  border: 1px solid rgba(231, 211, 161, 0.45);
+  border: 1px solid rgba(215, 226, 236, 0.5);
   border-radius: 12px;
   background: transparent;
-  color: var(--cream);
+  color: var(--mist);
   cursor: pointer;
 }
 
@@ -229,7 +230,7 @@ a:hover {
 
 .site-nav.is-open {
   display: block;
-  border-top: 1px solid rgba(231, 211, 161, 0.22);
+  border-top: 1px solid rgba(215, 226, 236, 0.22);
 }
 
 .site-nav ul,
@@ -247,7 +248,7 @@ a:hover {
 .site-nav a {
   display: block;
   padding: 0.75rem 0;
-  color: var(--cream);
+  color: var(--mist);
   text-decoration: none;
   font-weight: 500;
   font-size: 1.05rem;
@@ -255,7 +256,7 @@ a:hover {
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
-  color: var(--brass);
+  color: var(--silver);
 }
 
 .site-nav a[aria-current="page"] {
@@ -302,11 +303,11 @@ a:hover {
 
 .hero,
 .page-hero {
-  background-color: var(--espresso);
+  background-color: var(--gunmetal);
   background-image:
-    radial-gradient(760px 380px at 100% 0%, rgba(231, 211, 161, 0.15), transparent 58%),
-    radial-gradient(560px 300px at 0% 100%, rgba(140, 74, 50, 0.22), transparent 60%);
-  color: var(--cream);
+    radial-gradient(760px 380px at 100% 0%, rgba(190, 210, 226, 0.2), transparent 58%),
+    radial-gradient(560px 300px at 0% 100%, rgba(90, 120, 145, 0.28), transparent 60%);
+  color: var(--mist);
 }
 
 .hero {
@@ -323,11 +324,11 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--brass);
+  color: var(--silver);
 }
 
 .eyebrow-dark {
-  color: var(--brass-deep);
+  color: var(--steel-ink);
 }
 
 .hero h1,
@@ -344,7 +345,7 @@ a:hover {
   max-width: 38rem;
   font-size: 1.12rem;
   line-height: 1.55;
-  color: #e0d2c2;
+  color: #c5ced6;
 }
 
 .pills {
@@ -355,14 +356,14 @@ a:hover {
 }
 
 .pills li {
-  border: 1px solid rgba(231, 211, 161, 0.5);
+  border: 1px solid rgba(215, 226, 236, 0.55);
   border-radius: 999px;
   padding: 0.32rem 0.72rem;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--cream);
+  color: var(--mist);
 }
 
 .actions {
@@ -380,7 +381,7 @@ a:hover {
 .poster {
   border-radius: 28px;
   padding: 0.55rem;
-  background: linear-gradient(150deg, rgba(231, 211, 161, 0.95), rgba(107, 66, 38, 0.55) 42%, rgba(231, 211, 161, 0.8));
+  background: linear-gradient(145deg, #f7fbff 0%, #9eb0c2 24%, #e7eef4 46%, #6e8496 68%, #d5e0ea 100%);
 }
 
 .poster-inner {
@@ -392,9 +393,9 @@ a:hover {
   justify-content: space-between;
   gap: 2rem;
   background:
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.03) 0 1px, transparent 1px 9px),
-    linear-gradient(180deg, #4a2e1c 0%, #24160f 100%);
-  color: var(--cream);
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 4px),
+    linear-gradient(165deg, #4a5662 0%, #2a323a 55%, #1e252c 100%);
+  color: var(--mist);
 }
 
 .poster-kicker {
@@ -403,7 +404,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--brass);
+  color: var(--silver);
 }
 
 .poster-title {
@@ -419,8 +420,8 @@ a:hover {
 .poster-foot {
   margin: 0;
   padding-top: 0.85rem;
-  border-top: 1px solid rgba(231, 211, 161, 0.35);
-  color: #e0d2c2;
+  border-top: 1px solid rgba(215, 226, 236, 0.4);
+  color: #c5ced6;
   font-size: 0.98rem;
 }
 
@@ -448,40 +449,44 @@ a:hover {
   justify-content: center;
   min-height: 48px;
   padding: 0.7rem 1.2rem;
-  border: 1.5px solid transparent;
+  border: 1.5px solid #7f94a6;
   border-radius: 999px;
-  background: var(--brass);
-  color: var(--espresso);
+  background: linear-gradient(180deg, #f8fafc 0%, #c5d3de 55%, #9aafc0 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  color: var(--ink);
   font-weight: 600;
   text-decoration: none;
   line-height: 1.2;
 }
 
 .button:hover {
-  background: #f3e6c4;
-  color: var(--espresso);
+  background: linear-gradient(180deg, #ffffff 0%, #d7e2ea 50%, #b4c6d4 100%);
+  color: var(--ink);
 }
 
 .button-ghost {
   background: transparent;
-  color: var(--cream);
-  border-color: rgba(244, 239, 230, 0.55);
+  box-shadow: none;
+  color: var(--mist);
+  border-color: rgba(215, 226, 236, 0.6);
 }
 
 .button-ghost:hover {
-  background: rgba(244, 239, 230, 0.08);
-  color: var(--cream);
-  border-color: var(--cream);
+  background: rgba(215, 226, 236, 0.1);
+  color: var(--mist);
+  border-color: var(--mist);
 }
 
 .button-dark {
-  background: var(--espresso);
-  color: var(--cream);
+  background: var(--gunmetal);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  border-color: #1a2128;
+  color: var(--mist);
 }
 
 .button-dark:hover {
-  background: #32241b;
-  color: var(--cream);
+  background: #323a44;
+  color: var(--mist);
 }
 
 .text-link {
@@ -510,7 +515,7 @@ a:hover {
 .section-intro {
   margin: 0.8rem 0 0;
   max-width: 40rem;
-  color: var(--steel);
+  color: var(--muted);
   font-size: 1.08rem;
 }
 
@@ -526,9 +531,9 @@ a:hover {
 .aside,
 .hours-card {
   background: var(--card);
-  border: 1px solid rgba(60, 36, 21, 0.08);
+  border: 1px solid rgba(26, 33, 40, 0.1);
   border-radius: 18px;
-  box-shadow: 0 16px 40px rgba(48, 28, 14, 0.05);
+  box-shadow: 0 16px 40px rgba(20, 28, 36, 0.06);
 }
 
 .card {
@@ -541,21 +546,21 @@ a:hover {
 }
 
 .card-firearms {
-  border-top-color: var(--steel);
+  border-top-color: #3e5568;
 }
 
 .card-coffee {
-  border-top-color: #a6843d;
+  border-top-color: #9eb0c2;
 }
 
 .card-hangout {
-  border-top-color: #6b4226;
+  border-top-color: #5d7386;
 }
 
 .card-index {
   font-family: var(--serif);
   font-size: 1.35rem;
-  color: var(--brass-deep);
+  color: var(--steel-ink);
 }
 
 .card h3,
@@ -567,7 +572,7 @@ a:hover {
 .card p,
 .event-card p {
   margin: 0;
-  color: var(--steel);
+  color: var(--muted);
 }
 
 .card .text-link {
@@ -577,9 +582,10 @@ a:hover {
 
 .band-walnut {
   background:
-    radial-gradient(520px 220px at 0% 0%, rgba(231, 211, 161, 0.14), transparent 60%),
-    var(--walnut);
-  color: var(--cream);
+    radial-gradient(520px 220px at 0% 0%, rgba(190, 210, 226, 0.18), transparent 60%),
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 5px),
+    var(--plate);
+  color: var(--mist);
 }
 
 .band-walnut .statement-text {
@@ -595,7 +601,7 @@ a:hover {
 .statement-note {
   max-width: 36rem;
   margin: 1rem 0 1.4rem;
-  color: #e0d2c2;
+  color: #c5ced6;
   font-size: 1.08rem;
 }
 
@@ -617,21 +623,21 @@ a:hover {
 }
 
 .panel-dark {
-  background: var(--espresso);
-  color: var(--cream);
+  background: var(--gunmetal);
+  color: var(--mist);
 }
 
 .panel-dark p {
-  color: #e0d2c2;
+  color: #c5ced6;
 }
 
 .panel-paper {
   background: var(--card);
-  border: 1px solid rgba(60, 36, 21, 0.08);
+  border: 1px solid rgba(26, 33, 40, 0.1);
 }
 
 .panel-paper p {
-  color: var(--steel);
+  color: var(--muted);
 }
 
 .section-warm {
@@ -654,8 +660,8 @@ a:hover {
   margin: 0;
   padding: 0.28rem 0.55rem;
   border-radius: 999px;
-  background: #f8efd8;
-  color: var(--brass-deep);
+  background: #e4ebf1;
+  color: var(--steel-ink);
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -729,8 +735,8 @@ a:hover {
 }
 
 .notice {
-  background: #f8efd8;
-  border: 1px solid rgba(166, 132, 61, 0.45);
+  background: #e4ebf1;
+  border: 1px solid rgba(70, 96, 118, 0.35);
 }
 
 .callout {
@@ -740,8 +746,8 @@ a:hover {
 }
 
 .story-slot {
-  border: 1.5px dashed var(--brass-deep);
-  background: rgba(166, 132, 61, 0.1);
+  border: 1.5px dashed var(--steel-ink);
+  background: rgba(70, 100, 130, 0.1);
   margin-top: 1.25rem;
 }
 
@@ -760,7 +766,7 @@ a:hover {
 .offer-list li {
   max-width: none;
   background: var(--card);
-  border: 1px solid rgba(60, 36, 21, 0.08);
+  border: 1px solid rgba(26, 33, 40, 0.1);
   border-radius: 14px;
   padding: 0.95rem 1rem;
 }
@@ -794,7 +800,7 @@ a:hover {
 
 .menu p {
   margin: 0.15rem 0 0;
-  color: var(--steel);
+  color: var(--muted);
   font-size: 0.98rem;
 }
 
@@ -817,7 +823,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: var(--brass-deep);
+  color: var(--steel-ink);
 }
 
 .facts dd {
@@ -831,7 +837,7 @@ a:hover {
 
 .event-list article {
   background: var(--card);
-  border: 1px solid rgba(60, 36, 21, 0.08);
+  border: 1px solid rgba(26, 33, 40, 0.1);
   border-radius: 18px;
   padding: 1.2rem 1.15rem;
 }
@@ -853,7 +859,7 @@ a:hover {
 }
 
 .muted {
-  color: var(--steel);
+  color: var(--muted);
 }
 
 .link-list {
@@ -883,14 +889,14 @@ a:hover {
   border: 1px dashed currentColor;
   border-radius: 0.35rem;
   padding: 0.08em 0.4em;
-  background: rgba(166, 132, 61, 0.12);
+  background: rgba(90, 120, 145, 0.14);
 }
 
 /* Footer */
 
 .site-footer {
   background: var(--footer);
-  color: #e0d2c2;
+  color: #c5ced6;
   padding: 2.75rem 0 2rem;
 }
 
@@ -910,7 +916,7 @@ a:hover {
   margin: 0;
   font-family: var(--serif);
   font-size: 1.7rem;
-  color: var(--cream);
+  color: var(--mist);
 }
 
 .footer-line {
@@ -918,7 +924,7 @@ a:hover {
 }
 
 .footer-nav a {
-  color: var(--cream);
+  color: var(--mist);
   text-decoration: none;
   font-weight: 500;
 }
@@ -941,7 +947,7 @@ a:hover {
 .footer-legal {
   margin-top: 1.8rem;
   padding-top: 1.15rem;
-  border-top: 1px solid rgba(231, 211, 161, 0.2);
+  border-top: 1px solid rgba(215, 226, 236, 0.22);
   font-size: 0.95rem;
 }
 

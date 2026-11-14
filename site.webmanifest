@@ -1,0 +1,16 @@
+{
+  "name": "Horace Armory",
+  "short_name": "Horace Armory",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E9EDF1",
+  "theme_color": "#262C33",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -29,7 +29,7 @@ Each page is one HTML file. Change the sentences in that file. The header and th
 | Coming soon / hours | `visit.html` |
 | Missing-page message | `404.html` |
 
-Colors and type are in `css/styles.css`, in the `:root` block at the top. The logo mark is `logo.svg` (silver, for the dark header and footer) and `favicon.svg` (the browser tab icon). The words “Horace Armory” next to the mark are text in the header, not part of the SVG.
+Colors and type are in `css/styles.css`, in the `:root` block at the top. The logo mark is `logo.svg` (blue-grey, for the dark header and footer) and `favicon.svg` (the browser tab icon). The words “Horace Armory” next to the mark are text in the header, not part of the SVG.
 
 Search the HTML for `[` to find every placeholder token.
 

@@ -5,18 +5,18 @@
 */
 
 :root {
-  --ink: #1a2128;
-  --mist: #f2f5f7;
-  --paper: #e9edf1;
-  --paper-deep: #dfe4e9;
-  --card: #f6f8fa;
-  --gunmetal: #262c33;
-  --plate: #3a4450;
-  --footer: #161b20;
-  --silver: #d7e2ec;
-  --steel-ink: #24384a;
-  --muted: #4b5560;
-  --line: rgba(26, 33, 40, 0.12);
+  --ink: #1a2226;
+  --mist: #e7ecef;
+  --paper: #e4e8eb;
+  --paper-deep: #d7dde1;
+  --card: #f4f6f7;
+  --gunmetal: #1e272c;
+  --plate: #2c3840;
+  --footer: #151c20;
+  --silver: #b7c2c8;
+  --steel-ink: #24343c;
+  --muted: #4a565c;
+  --line: rgba(26, 34, 38, 0.12);
   --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
   --wrap: 1120px;
@@ -41,7 +41,7 @@ body {
   line-height: 1.65;
   color: var(--ink);
   background:
-    radial-gradient(1000px 420px at 0% -10%, rgba(158, 176, 194, 0.16), transparent 55%),
+    radial-gradient(1000px 420px at 0% -10%, rgba(90, 112, 124, 0.14), transparent 55%),
     var(--paper);
 }
 
@@ -305,8 +305,8 @@ a:hover {
 .page-hero {
   background-color: var(--gunmetal);
   background-image:
-    radial-gradient(760px 380px at 100% 0%, rgba(190, 210, 226, 0.2), transparent 58%),
-    radial-gradient(560px 300px at 0% 100%, rgba(90, 120, 145, 0.28), transparent 60%);
+    radial-gradient(760px 380px at 100% 0%, rgba(120, 145, 158, 0.16), transparent 58%),
+    radial-gradient(560px 300px at 0% 100%, rgba(55, 78, 92, 0.35), transparent 60%);
   color: var(--mist);
 }
 
@@ -381,7 +381,7 @@ a:hover {
 .poster {
   border-radius: 28px;
   padding: 0.55rem;
-  background: linear-gradient(145deg, #f7fbff 0%, #9eb0c2 24%, #e7eef4 46%, #6e8496 68%, #d5e0ea 100%);
+  background: linear-gradient(145deg, #aeb8be 0%, #3e4a50 20%, #7a868c 40%, #2a3439 68%, #8e999f 100%);
 }
 
 .poster-inner {
@@ -393,8 +393,8 @@ a:hover {
   justify-content: space-between;
   gap: 2rem;
   background:
-    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 4px),
-    linear-gradient(165deg, #4a5662 0%, #2a323a 55%, #1e252c 100%);
+    repeating-linear-gradient(115deg, rgba(186, 204, 214, 0.07) 0 1px, transparent 1px 4px),
+    linear-gradient(165deg, #3a474e 0%, #243036 58%, #1a2226 100%);
   color: var(--mist);
 }
 
@@ -449,43 +449,43 @@ a:hover {
   justify-content: center;
   min-height: 48px;
   padding: 0.7rem 1.2rem;
-  border: 1.5px solid #7f94a6;
+  border: 1.5px solid #2a3439;
   border-radius: 999px;
-  background: linear-gradient(180deg, #f8fafc 0%, #c5d3de 55%, #9aafc0 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
-  color: var(--ink);
+  background: linear-gradient(180deg, #546269 0%, #425058 52%, #323c42 100%);
+  box-shadow: inset 0 1px 0 rgba(210, 222, 228, 0.45);
+  color: #f4f7f8;
   font-weight: 600;
   text-decoration: none;
   line-height: 1.2;
 }
 
 .button:hover {
-  background: linear-gradient(180deg, #ffffff 0%, #d7e2ea 50%, #b4c6d4 100%);
-  color: var(--ink);
+  background: linear-gradient(180deg, #546269 0%, #4a5860 52%, #3a464c 100%);
+  color: #f4f7f8;
 }
 
 .button-ghost {
   background: transparent;
   box-shadow: none;
   color: var(--mist);
-  border-color: rgba(215, 226, 236, 0.6);
+  border-color: rgba(183, 194, 200, 0.7);
 }
 
 .button-ghost:hover {
-  background: rgba(215, 226, 236, 0.1);
+  background: rgba(183, 194, 200, 0.12);
   color: var(--mist);
   border-color: var(--mist);
 }
 
 .button-dark {
-  background: var(--gunmetal);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
-  border-color: #1a2128;
+  background: linear-gradient(180deg, #314047 0%, #1e272c 100%);
+  box-shadow: inset 0 1px 0 rgba(183, 194, 200, 0.28);
+  border-color: #151c20;
   color: var(--mist);
 }
 
 .button-dark:hover {
-  background: #323a44;
+  background: #243036;
   color: var(--mist);
 }
 
@@ -546,15 +546,15 @@ a:hover {
 }
 
 .card-firearms {
-  border-top-color: #3e5568;
+  border-top-color: #3a4a52;
 }
 
 .card-coffee {
-  border-top-color: #9eb0c2;
+  border-top-color: #6a787f;
 }
 
 .card-hangout {
-  border-top-color: #5d7386;
+  border-top-color: #4e5c64;
 }
 
 .card-index {
@@ -582,8 +582,8 @@ a:hover {
 
 .band-walnut {
   background:
-    radial-gradient(520px 220px at 0% 0%, rgba(190, 210, 226, 0.18), transparent 60%),
-    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 5px),
+    radial-gradient(520px 220px at 0% 0%, rgba(120, 145, 158, 0.16), transparent 60%),
+    repeating-linear-gradient(115deg, rgba(186, 204, 214, 0.06) 0 1px, transparent 1px 5px),
     var(--plate);
   color: var(--mist);
 }
